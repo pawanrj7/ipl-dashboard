@@ -18,7 +18,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
     
     Match match= new Match();
 
-    match.setId(Long.parseLong(matchInput.getCity()));
+    match.setId(Long.parseLong(matchInput.getId()));
     match.setCity(matchInput.getCity());
 
     match.setDate(LocalDate.parse(matchInput.getDate()));
